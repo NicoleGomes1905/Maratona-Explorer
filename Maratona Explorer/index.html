@@ -1,29 +1,28 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maratona Explorer</title>
-    <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript" src="./index.js" defer=""></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/app.js" defer></script>
   </head>
 
   <body>
     <div id="container">
-      <img src="assets/cristal-ball.svg" alt="Imagem de uma bola de cristal">
-      <h1>Me informe a pergunta que deseja!</h1>
-      <p>Clique em fazer pergunta para que seus caminhos sejam revelados.</p>
-      <input id="inputPergunta" type="text" placeholder="Digite sua pergunta">
-      <button id="buttonPerguntar" onclick="fazerPergunta()">Fazer Pergunta</button>
-
-      <h3 id="resposta"></h3>
+      <img src="assets/crystal-ball.svg" alt="Crystal ball illustration" />
+      <h1>Ask your question</h1>
+      <p class="description">
+        Type a question and click the button to receive a fun answer.
+      </p>
+      <input
+        id="questionInput"
+        type="text"
+        placeholder="Type your question here"
+      />
+      <button id="askButton">Ask Question</button>
+      <div id="answer"></div>
     </div>
-
-
   </body>
-
 </html>
